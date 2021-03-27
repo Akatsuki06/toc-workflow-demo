@@ -14,6 +14,6 @@
     - [hashset](./notes/collections/set/hashset.md)
     - [linkedhashset](./notes/collections/set/linkedhashset.md)
 - databases
-  - cassandara
-    - [data_model](./notes/databases/cassandara/data_model.md)
-    - [architecture](./notes/databases/cassandara/architecture.md)
+  - cassandra
+    - [data_model](./notes/databases/cassandra/data_model.md)
+    - [architecture](./notes/databases/cassandra/architecture.md)
