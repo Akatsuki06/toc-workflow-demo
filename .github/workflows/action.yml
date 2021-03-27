@@ -1,0 +1,30 @@
+name: toc-workflow-demo
+
+on:
+  push:
+    branches: [ main ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: execute py script
+        run: |
+          python script.py
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.9.1
+        with:
+          commit_message: Autocommit to create index
+      - name: Update Status
+        run: |
+          echo Updated Index successfully,
+          echo Auto commit changes
+          
